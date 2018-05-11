@@ -1,0 +1,74 @@
+tr:hover { background-color : #FFF5EE }
+            a:hover { background-color : lime }
+            
+/*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+.pure-menu {
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+
+.pure-menu-link {
+    padding: .5em .7em;
+}
+
+/*
+ *To highlight the selected row in <table>
+*/
+tr:hover {
+	background-color:#f5f5f5;
+}
+
+/*
+ * -- BANNER --
+ * The top banner with the headings. By using a combination
+ * of `display: table;` and `display: table-cell;`,
+ * vertically center the text.
+ */
+
+.banner-head {
+	display: table-cell;
+	vertical-align: middle;
+	margin-bottom: 0;
+	font-size: 2em;
+	color: white;
+	font-weight: 500;
+	text-shadow: 0 1px 1px black;
+}
+
+/*
+ * -- TABLET MEDIA QUERIES --
+ * On tablets, slightly adjust the size of the banner
+ * text and add some vertical space between the various individual tables
+ */
+@media(min-width: 767px) {
+
+    .banner-head {
+        font-size: 4em;
+    }
+    .individual-table {
+        margin-bottom: 0;
+    }
+
+}
+
+.custom-restricted-width {
+    /* To limit the menu width to the content of the menu: */
+    display: inline-block;
+    /* Or set the width explicitly: */
+    /* width: 10em; */
+}
+
+/*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, reduce the height and font-size of the banner further
+ */
+@media (min-width: 480px) {
+    .banner {
+        height: 400px;
+    }
+    .banner-head {
+        font-size: 3em;
+    }
+}
